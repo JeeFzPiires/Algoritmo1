@@ -1,0 +1,2 @@
+# Algoritmo1
+JavaScript
