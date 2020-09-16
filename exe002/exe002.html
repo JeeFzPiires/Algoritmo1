@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //operação - matemático + - * / %
+        //sintaxe - regra de escrever algo no progama
+        //que nao podemos fazer
+        //usar palavras reservadas -> for
+        //compostos deixar separado
+        //não usar acentos e caracteres separados
+        var x = 10; 
+        var y = 20;
+        /*console.log('oi');
+        console.log(2 + 3);
+        console.log(x + y);
+        console.log(x - y);
+        console.log(x * y);
+        console.log(x / y);
+        console.log(x % y);*/
+        //operadores relacionais , comprar algo
+        //igualdade , diferença , maior que , maior igual que , menor que menor igual
+        // == (===) , !== , > , >=, < , <=
+        console.log(x == y); //true são iguais, false sao diferentes
+        console.log(x === y);//true são iguais, false são diferentes
+        // == ele compara independente do tipo de variavel 
+        // === ele compara e considera o tipo
+        console.log( x > y);
+        //resultado sempre é true ou false
+        var idadeEmAnos = 36;
+        if(idadeEmAnos >=18){
+            console.log('Voce pode tirar carteira')
+        } else {
+            console.log('Voce é menor de idade, não pode tirar carteira')
+        }
+        var metrosKm = window.prompt("Digite quantos metros(m) quer transformar em quilometros(km)");
+        console.log(`O valor em km é ${metrosKm / 1000}`);//Metros para Quilometros
+        //Exercicio 2
+        var numDobro = window.prompt("Digite um numero para sabe o Dobro dele");
+        console.log(`O dobro do numero é ${numDobro * 2}`);//Dobro do numero
+        //Exercicio 3
+        var grauFahrenheit = window.prompt("Digite o grau Fahrenheit para saber quantos graus Celsius");
+        console.log(`A temperatura em Celsius é ${5*(100 -32) / 9}`);// Fahrenheit para Celsius
+        //Exercicio 4
+        var primeiroValor = window.prompt("Digite o primeiro valor para somar")
+        var segundoValor = window.prompt("Digite o segundo valor para somar")
+        console.log(`${primeiroValor} + ${segundoValor} = ${primeiroValor} + ${segundoValor}`);
+        console.log(`${(segundoValor ** 2) * primeiroValor}`);
+        console.log(`o quadrado de ${primeiroValor} é ${primeiroValor ** 2}`);
+        console.log(`${primeiroValor} - ${segundoValor} = ${primeiroValor - segundoValor}`);
+        //Exercicio 5
+        var valorEmReais = 1000;
+        console.log(`O valor de ${1000} em dólar é ${valorEmReais / 5.47}`);
+        //Exercicio 6
+        var pesoEmKg = 70;
+        var alturaMetros = 1.73;
+        console.log(`O seu IMC é ${pesoEmKg} / ${(alturaMetros ** 2)}`);
+        //Exercicio 7
+        var idadeAnos = window.prompt("Digite sua idade em anos:");
+        //
+        if(idadeAnos >= 5 && idadeEmAnos<= 7){
+        console.log(`Infatil A 5 | = 7`);
+        }
+         else{
+        if(idadeAnos >= 8 && idadeEmAnos<= 10){
+        console.log(`Infatil B 8 | = 10`);
+        } else{
+
+        if(idadeAnos >= 11 && idadeEmAnos<= 13){
+        console.log(`Juvenil A 11 | = 13`);
+        } else{
+     
+            if(idadeAnos >= 14 && idadeEmAnos<= 17){
+        console.log(`Juvenil B 14 | = 17`);
+        } else{
+       
+            if(idadeAnos >= 18){
+        console.log(Adulto);
+        }
+    } 
+        }
+    }
+}
+
+
+
+
+    </script>    
+</body>
+</html>

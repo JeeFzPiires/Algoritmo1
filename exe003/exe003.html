@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var totalRepeticoes = 100;
+        var repeticaoAtual = 1;
+        while(repeticaoAtual <= totalRepeticoes){
+            //repetir 100x
+            console.log(`Meu nome é h1`);
+            repeticaoAtual= repeticaoAtual + 1;//proxima INCREMENTO
+            //repeticaoAtual ++;
+            //loop infinito
+        }*/
+        // PARA - for usado para fazer repetições
+        // FOR SINTAXE :
+        //for (onde eu comeco?; onde eu termino? ; como eu vou andar?)
+        //for(condição inicial; condição de parada; passo frente ou para tras)
+        //for(var repeticaoAtual = 1; repeticaoAtual <= totalRepeticoes; repeticaoAtual++){
+            //console.log(`${repeticaoAtual} - Meu nome é H1`);
+        //}
+        //------------------------------
+        /*var totalDeAlunos = 3;
+        var alunoAtual=1;
+        var somaDasIdades = 0;
+        var idadeAlunoAtual=0;
+        while(alunoAtual<=totalDeAlunos){
+            idadeAlunoAtual = window.prompt("Qual a sua idade?");
+            //considera texto + em um texto concatenação
+            //somaDasIdades = somaDasIdades + parseint(idadeAlunoAtual);;
+            somaDasIdades += parseInt(idadeAlunoAtual);//mesmo do de cima
+            console.log(`${somaDasIdades}`);
+            alunoAtual++; // alunoAtual = alunoAtual + 1;
+        }*/
+        /*var totalDeAlunos = 3;
+        var somaDasIdades = 0;
+        var idadeAlunoAtual=0;
+        for(var alunoAtual = 1;alunoAtual<=totalDeAlunos;alunoAtual++){
+            idadeAlunoAtual = window.prompt("Qual a sua idade?");
+            somaDasIdades += parseInt(idadeAlunoAtual);//mesmo do de cima 
+            console.log(`${somaDasIdades}`);
+        }*/
+        /*var somaDasIdadesAnos = 0;
+        var idadeDigitadaAnos = 0;
+        var totalIdadesDigitadas = 3;
+        var contador=1;
+        while ( contador  <= totalIdadesDigitadas ){ 
+            idadeDigitadaAnos = window.prompt("Digite a sua idade?");
+            somaDasIdadesAnos = somaDasIdadesAnos + parseInt(idadeDigitadaAnos);      
+            contador++;      
+        }        
+        console.log(`Media de idade ${somaDasIdadesAnos/3}`);
+        }
+        console.log(`Soma final é ${somaPares}`)*/
+        //-------- EXERCICIO 2 ----------//
+        var somaDasIdadesAnos = 0;
+        var idadeDigitadaAnos = window.prompt("Digite a sua idade: ");
+        var totalIdadeDigitadas = 3;
+        var contador = 1;
+        while ( contador <= totalIdadeDigitadas){
+            somaDasIdadesAnos = somaDasIdadesAnos + idadeDigitadaAnos;
+            contador++;
+        }
+        console.log(`Media de idade ${somaDasIdadesAnos/3}`);
+
+        //-------- EXERCICIO 3 ---------//
+        var n = window.prompt("Digite um valor N?");
+        var soma = 0;
+        for(contador = 1; contador <= n; contador++){
+            soma += contador;
+        }
+        console.log(`${soma}`);
+
+        //-------- EXERCICIO 4 ---------//
+        var valorSaque = 120;
+        var numeroNotasCem = 0;
+        var numeroNotasCinquenta = 0;
+        var numeroNotasVinte
+        var resto = 0;
+        if(valorSaque >= 100){
+            numeroNotasCem = Math.floor(valorSaque/100)
+            console.log(`Notas de CEM = ${numeroNotasCem}`);
+            console.log(`Valor Restante = ${resto}`);
+        }
+        if(resto >= 50){
+            numeroNotasCinquenta = Math.floor(resto / 50);
+            resto = resto % 50;
+        }
+        if(resto >= 20){
+            numeroNotasVinte = Math.floor(resto / 20);
+            resto = resto % 20;
+            console.log(`Notas de 20 = ${numeroNotasVinte}`);
+            console.log(`Valor Restante = ${resto}`);
+            valorSaque = resto;
+        }
+        if(valorSaque >= ) 
+    </script>
+</body>
+</html>

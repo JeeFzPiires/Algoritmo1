@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var listaIdadesAluno = []
+        listaIdadesAluno.push(36);//0
+        listaIdadesAluno.push(18);//1
+        listaIdadesAluno.push(19);//2
+        listaIdadesAluno.push(30);//3
+        listaIdadesAluno.push(20);//4
+        listaIdadesAluno.push(35);//5
+        listaIdadesAluno.push(22);//6
+        console.log(listaIdadesAluno);
+        console.log(`Tamanho de vetor é ${listaIdadesAluno.length}`);
+        //---------------------------------//
+        var arrayPares = []
+        var arrayImpares = []
+        
+        for(var entrada=1; entrada <= 10; entrada++){
+            var valorAtual = parseInt( window.prompt(`${entrada}° Digite o valor? `));
+            //resto por 2
+            if(valorAtual % 2 == 0){
+                arrayPares.push(valorAtual);
+            }else{
+                arrayImpares.push(valorAtual);
+            }
+        }
+        console.log(arrayPares);
+        console.log(arrayImpares);
+        if(arrayPares.length > arrayImpares){
+            console.log(`Maior é o array de pares com ${arrayPares.length} valores`);
+        }else if(arrayPares.length < arrayImpares){
+            console.log(`Maior é array de impares com ${arrayImpares.length} valores`);
+        }else{
+            console.log(`Eles tem os mesmo tamanho`);
+        }
+
+    </script>
+</body>
+</html>

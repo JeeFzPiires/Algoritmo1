@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //---------ARRAY----------//
+        /*var listaIdadesAluno = []
+        listaIdadesAluno.push(36);//0
+        listaIdadesAluno.push(18);//1
+        listaIdadesAluno.push(19);//2
+        listaIdadesAluno.push(30);//3
+        listaIdadesAluno.push(20);//4
+        listaIdadesAluno.push(35);//5
+        console.log(listaIdadesAluno);
+        console.log(`Tamanho de vetor é ${listaIdadesAluno.length}`);
+        //quero saber qual é a maior idade da lista de alunos?
+        //percorro um vetor? ou seja, acesso todos os elementos de um vetor?
+        // posicao inicial? ate quando? ate o tamanho
+        var maiorIdade = 0;//valor padrao ou valor Default
+        var menorIdade = 999;
+        var somaIdade = 0;
+        console.log(`Antes de começar maior idade é ${maiorIdade}`);
+        for (var posicao=0     ;posicao<listaIdadesAluno.length;posicao++){
+            if (maiorIdade < listaIdadesAluno[posicao]){
+                maiorIdade = listaIdadesAluno[posicao];
+            }
+            if (menorIdade > listaIdadesAluno[posicao]){
+                menorIdade = listaIdadesAluno[posicao];
+            }
+            somaIdade += listaIdadesAluno[posicao];
+            console.log(`Posicao ${posicao} valor = ${listaIdadesAluno[posicao]}`);
+        }
+        console.log(`No final maior idade é ${maiorIdade}`);
+        console.log(`No final a menor idade é ${menorIdade}`);
+        console.log(`Soma das Idades é ${somaIdade}`)
+
+        //-------------------------------------//
+        var nomeAluno = window.prompt("Digite seu nome?");
+        var notaAluno = 0;
+        var somaTotalNotas = 0;
+        var contador = 1;
+        var totalNotaAluno = 3;
+        
+        while(contador <= totalNotaAluno  ){
+            notaAluno =  window.prompt(`Digite sua nota ${contador} ?`);
+            somaTotalNotas = somaTotalNotas + parseFloat(`${notaAluno}`);
+            contador++;
+
+            var mediaNota = (somaTotalNotas)/3;
+
+        }
+         
+        if (mediaNota >= 7){
+            console.log(`Sua Média foi maior que 7, APROVADO`);
+
+        }
+
+        else{
+          if  (mediaNota <=5 ){
+            console.log(`Sua Média foi menor que 5, REPROVADO`);
+
+          }
+
+        }
+        
+            if (mediaNota >=5.1 && mediaNota <=6.9){
+            console.log(`Sua Média está entre 5.1 e 6.9 e está de RECUPERAÇÃO`);
+            }*/
+        //---------------------------------------------------//
+        var horaAula = window.prompt (`digite quantidade horas/aula : `);
+        var nivelProf = window.prompt (`digite o nivel do professor :`);
+        var profNivel1 = 12.00;
+        var profNivel2 = 17.00;
+        var profNivel3 = 25.00; 
+    
+
+             if(nivelProf == 1 ){
+              resultado = parseFloat(horaAula)*profNivel1
+                console.log(`Salario do Professor nivel 1 é R$ ${resultado}`);
+            }else
+            
+                if (nivelProf == 2){
+                   resultado2 = parseFloat(horaAula)*profNivel2
+                     console.log(`Salario do Professor nivel 2 é  R$ ${resultado2}`);
+            }else
+
+            if(nivelProf == 3 ){
+               resultado3 = parseFloat(horaAula)*profNivel3
+                console.log(`Salario do Professor nivel 3 é  R$ ${resultado3}`);
+            }
+                
+    </script>
+</body>
+</html>
