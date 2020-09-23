@@ -39,7 +39,28 @@
         }else{
             console.log(`Eles tem os mesmo tamanho`);
         }
+        //--------------------------------------------//
+        var arrayR = [];
+        var arrayS = [];
+        var arrayInterseccao = [];
 
+        var valorDigitado = 0;//valor default padrao
+        for (var entradaArrayR = 0; entradaArrayR <= 4; entradaArrayR++) {
+            valorDigitado = parseInt(window.prompt(`Digite um valor para o array R na posição ${entradaArrayR}?`));
+            arrayR.push(valorDigitado);
+        }
+        console.log(arrayR);
+        for (var entradaArrayS = 0; entradaArrayS <= 9; entradaArrayS++) {
+            valorDigitado = parseInt(window.prompt(`Digite um valor para o array S na posição ${entradaArrayS}?`));
+            arrayS.push(valorDigitado);
+        }
+        console.log(arrayS);
+
+        //em comum em  R e S
+        /*for (var posicaoR = 0; posicaoR <= 4; posicaoR++) {
+            for (var posicaoS = 0; posicaoS <= 9; posicaoS++) {
+                if (arrayR[posicaoR] === arrayS[posicaoS]) {/*
+        
     </script>
 </body>
 </html>

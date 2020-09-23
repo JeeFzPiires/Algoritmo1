@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>/*
+        /* 1 - A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para ler as
+dimensões de um terreno e depois exibir a área do terreno*/
+        var largTerreno = window.prompt("Digite a largura do terreno em m²: ");
+        var compTerreno = window.prompt("Digite o comprimento do terreno em m²: ");
+        var areaTerreno = (largTerreno * compTerreno);
+        console.log(`A area do terreno é ${areaTerreno} m²`)
+        console.log(`-------------------------------------`)
+
+        /* 2 -  Faça um algoritmo para calcular quantas ferraduras são necessárias para equipar todos os
+cavalos comprados para um haras*/
+        var qtdCavalo = window.prompt("Quantos cavalos foram comprados?: ")
+        var ferraduras = (qtdCavalo * 4);
+        console.log(`Precisa de ${ferraduras} ferraduras para equipar nos cavalos.`)
+        console.log(`-------------------------------------`)
+        /* 3 -  A padaria Hotpão vende uma certa quantidade de pães franceses e uma quantidade de
+broas a cada dia. Cada pãozinho custa R$ 0,12 e a broa custa R$ 1,50. Ao final do dia, o dono
+quer saber quanto arrecadou com a venda dos pães e broas (juntos), e quanto deve guardar
+numa conta de poupança (10% do total arrecadado). Você foi contratado para fazer os cálculos
+para o dono. Com base nestes fatos, faça um algoritmo para ler as quantidades de pães e de
+broas, e depois calcular os dados solicitados.*/
+        var valorPaozinho = window.prompt("Quantos pãozinhos foram vendidos?: ");
+        var valorBroa = window.prompt("Quantas broas foram vendidos?: ");
+        
+        var somaPaozinho = (valorPaozinho * (0,12));
+            console.log(`Foram vendidos ${somaPaozinho} Reais de pão.`)
+        var somaBroa = (valorBroa * (1,50));
+            console.log(`Foram vendidos ${somaBroa} Reais de broa.`)
+        
+        var totalSoma = (somaBroa + somaPaozinho);
+            console.log(`O total vendido foi ${totalSoma} Reais`)
+        
+        var porcentagem1 = (somaPaozinho / (100));
+        var porcentagem2 = (somaBroa / (100));
+        var porcentagemTotal = (porcentagem1 + porcentagem2);
+        
+        var poupanca = (totalSoma - porcentagemTotal);
+            console.log(`Foi guardado ${porcentagemTotal} Reais na sua conta de poupança`);
+            console.log(`-------------------------------------`)
+        /* 4 -  Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma sendo
+vendida respectivamente por 10, 12 e 15 reais. Construa um algoritmo em que o usuário
+forneça a quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a
+máquina informe quanto será o valor arrecadado.*/
+        var qtdCamisetaP = window.prompt("Digite o tanto de camiseta tamanho P: ")
+        var qtdCamisetaM = window.prompt("Digite o tanto de camiseta tamanho M: ")
+        var qtdCamisetaG = window.prompt("Digite o tanto de camiseta tamanho G: ")
+        
+        var camisetaP = 10;
+        var camisetaM = 12;
+        var camisetaG = 15;
+
+        var somaCamisetaP = (qtdCamisetaP * camisetaP);
+            console.log(`Foram vendidos ${somaCamisetaP} Reais da camiseta P`);
+        var somaCamisetaM = (qtdCamisetaM * camisetaM);
+            console.log(`Foram vendidos ${somaCamisetaM} Reais da camiseta M`);
+        var somaCamisetaG = (qtdCamisetaG * camisetaG);
+            console.log(`Foram vendidos ${somaCamisetaG} Reais da camiseta G`);
+
+        var somaTotal = (somaCamisetaP + somaCamisetaM + somaCamisetaG);
+            console.log(`Valor total das camisera foi ${somaTotal} Reais`);  
+            console.log(`-------------------------------------`)  
+
+        /* 5 -  Construa um algoritmo para calcular a distância entre dois pontos do plano cartesiano. Cada
+ponto é um par ordenado (x,y). */
+        var valorX1 = window.prompt("Digite o valor de x1: ")
+        var valorY1 = window.prompt("Digite o valor de y1: ")
+        var valorX2 = window.prompt("Digite o valor de x2: ")
+        var valorY2 = window.prompt("Digite o valor de y2: ")
+
+        var distancia = (Math.pow(valorX1 - valorX2, 2) + Math.pow(valorY1 - valorY2,2));
+            console.log(`A distancia entre os dois pontos é ${distancia}.`)
+            console.log(`-----------------------------------------`)
+
+        /* Parte 2 - Estruturas condicionais
+           2 - 1 -  Considerando a estrutura a seguir responda:
+            a) Quando comando 1 é executado?
+                R= Só vai ser executado quando o if(cond1) e o if(cond2) for verdadeiro
+
+            b) Quando o comando 2 é executado?
+                R= Somente quando o if não for verdadeiro */
+
+        /* 2 - 2 -  Considerando os comandos E , OU e negação estudados em aula responda preenchendo a
+TV a seguir qual o resultado das operações
+
+                | a | b | a&&b | !(a&&b) | !a | !b | !a||!b |
+                | V | V |  F   |    V    |  F |  F |    V   |  
+                | V | F |  V   |    F    |  F |  V |    F   |
+                | F | V |  V   |    F    |  V |  F |    F   |
+                | F | F |  F   |    V    |  V |  V |    V   |
+
+            -------------------------------------------------------------*/
+
+        /* 2 - 3 - Com base nas condições estudadas em aula responda V ou F e justifique sua resposta.
+                a) !(a == b) ´e equivalente a a != b
+                    R= V - pois !(a == b) Negação da igualdade de a e b é equivalente a a desigual a b.
+            
+                b) !(a > b) ´e equivalente a a <= b
+                    R= V - pois negação de a > b é equivalente a a maior ou igual a b.*/
+            
+        /* 2 - 4 - Escreva um programa que recebe um operador aritmético e dois operandos e calcule a
+operação indicada. As operações possíveis são soma(+), subtração(−), multiplicação(*) e
+divisão(/). Ex: + 10 2 imprime 12 na tela.*/
+        var numero1 = window.prompt("Digite um numero: ")
+        var numero2 = window.prompt("Digite um numero: ")
+        var operador = window.prompt("Coloque um operador:Ex: + , - , * , /.");
+        var resultadoMais = parseInt(numero1) + parseInt(numero2)
+        var resultadoMenos = parseInt(numero1) - parseInt(numero2)
+        var resultadoMult = parseInt(numero1) * parseInt(numero2)
+        var resultadoDiv = parseInt(numero1) / parseInt(numero2)
+        
+        switch (operador) {
+            case "+":
+                console.log(`${numero1} + ${numero2} = ${resultadoMais}`)
+            break
+            case "-":
+                console.log(`${numero1} - ${numero2} = ${resultadoMenos}`)
+            break
+            case "*":
+                console.log(`${numero1} * ${numero2} = ${resultadoMult}`)
+            break
+            case "/":
+                console.log(`${numero1} / ${numero2} = ${resultadoDiv}`)
+            break
+            default:
+                console.log(`Apenas +, - , * e /`)
+        }
+        /* 2 - 5 Escreva um programa que leia uma letra e responda se a mesma é uma vogal ou consoante*/
+            var letra = window.prompt ("Digite uma letra")
+            letra = letra.toLowerCase();
+
+            if(letra=='a' || letra=='e' ||  letra=='i' ||  letra=='o' ||  letra=='u'){
+                console.log (`A letra ${letra} é vogal`);
+            }
+            else{
+                console.log (`A letra ${letra} é consoante`);
+            }
+        /* 2 - 6 Faça um algoritmo que leia os valores A, B, C e imprima na tela se a soma de A + B é menor
+que C.*/
+        var valorA = window.prompt ("Digite o valor de A")
+        var valorB = window.prompt("Digite o valor de B")
+        var valorC = window.prompt("Digite o valor de C")
+
+        var somaAB = parseInt(valorA) + parseInt(valorB)
+        if(somaAB <= valorC){
+        console.log(`${somaAB} é menor que ${valorC}`)
+        }
+        else{
+        console.log(`${somaAB} é maior que ${valorC}`)
+    }    
+        /* 3 - 1 Considere as seguintes estruturas a seguir e respondar quantidade de vezes que o laço será
+repetido. 
+        a)*/ 
+            for(var i=0; i< 10; i++){
+                console.log(`${i}`)
+            }
+        /* 3 - 2 Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem
+crescente. */
+        for (var contador = 1; contador <= 10; contador++){
+            console.log(`${contador}`);
+        }
+        /* 3 - 3 Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem
+decrescente. */
+        for (var contador = 10; contador >= 1; contador--){
+            console.log(`${contador}`)
+        }
+        /* 3 - 4 Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100 */
+        for (var contador = 1; contador <= 110; contador++)
+        if (contador >= 100){         
+        console.log(`${contador}`)
+        }
+        /* 3 - 5 Ler o número de alunos existentes em uma turma e, após isto, ler as notas destes alunos,
+calcular e escrever a média aritmética dessas notas lidas*/    
+        var totalAlunos = window.prompt("Digite o total de alunos")
+        var alunoAtual = 1;
+        var notaDoAluno = 0;
+        var somaDasNotas = 0;
+        var mediaDasNotas = 0;
+
+        while (alunoAtual <= totalAlunos){
+            notaDoAluno = parseFloat(window.prompt(`Digite a nota do aluno ${alunoAtual}`));
+            somaDasNotas = parseFloat(somaDasNotas + notaDoAluno)
+            mediaDasNotas = somaDasNotas / totalAlunos
+            alunoAtual ++
+        }
+            console.log (`Media Aritmética ${mediaDasNotas}`)
+        /* 3 - 6 Escreva um algoritmo para ler 10 números. Todos os números lidos com valor inferior a 40
+devem ser somados. Escreva o valor final da soma efetuada*/
+        
+        
+    
+        /* 4 - 1 Escreva um algoritmo que leia 5 valores de temperatura em Celsius e armazene em um
+vetor. Seu exercício deve converter cada temperatura dessa e armazenar em outro
+vetor com os valores em farehneit. Você deve mostrar no resultados os dois vetores.*/
+        
+        /* 4 - 2 - Escreva um algoritmo que permita a leitura dos nomes de 10 pessoas e armazene os
+nomes lidos em um vetor. Após isto, o algoritmo deve imprimir o nome da pessoa que
+tem o maior nome. Em caso de empate considere o último nome informado.*/
+        
+
+
+
+
+
+
+</script>
+</body>
+</html>
